@@ -8,7 +8,7 @@
 - text: About
   url: /about
 - text: Blog
-  url: /blog
+  url: https://coinlance.com
 - text: Services
   url: /services
 - text: Pages
@@ -21,8 +21,8 @@
   - text: Team
     url: /team
   - text: Blog
-    url: /blog
-  - text: Blog Details
+    url: https://coinlance.com
+  - text: Coinlance News
     url: /welcome-to-jekyll
   - text: Contact
     url: /contact
