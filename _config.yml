@@ -1,26 +1,24 @@
 
-title: "Xavat – Startup Agency and SasS Business Template"
+title: "SmartCash – 2.0 Horizon Release"
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  SmartCash is a community governance, cooperation & growth focused blockchain based currency & a decentralized economy.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://xavat.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://smartcash.cc" # the base hostname & protocol for your site, e.g. http://example.com
 phone_number: "+8801763633959"
 email: "rubel2585@gmail.com"
-company_name: "themeaffair"
+company_name: "smartcash"
 site_logo_one: "/assets/img/logo/logo.png"
 site_logo_two: "/assets/images/logo_3.png"
 site_logo_three: "/assets/images/logo_2.png"
-site_name: "Onova"
+site_name: "SmartCash"
 
 page_banner_image: "/assets/img/bg/breadcrumb_bg.png"
 
-facebook_url: "https://facebook.com/onva"
-twitter_url: "https://twitter.com/onva"
-behance_url: "https://behance.com/onva"
-youtube_url: "https://youtube.com/onva"
-instagram_url: "https://www.instagram.com/onva"
+facebook_url: "https://www.facebook.com/scashofficial"
+twitter_url: "https://twitter.com/scashofficial"
+behance_url: ""
+youtube_url: "https://www.youtube.com/SmartCashDotCC"
+instagram_url: ""
 
 mailchimp_url: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
 
