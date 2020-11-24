@@ -1,0 +1,114 @@
+---
+layout: default
+---
+{% include post_header.html %}
+<!-- inner-blog -->
+<section class="inner-blog inner-bp pt-90 pb-90">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="blog-details-wrap">
+                    <div class="details__content pb-50">
+                        {% if page.post_image %}
+                    	<div class="post-thumb mb-3">
+                    		<img class="img-fluid" src="{{page.post_image}}" alt="{{post.title}}"/>
+                    	</div>
+                        {% endif %}
+                       <div class="post-content">
+                       	{{page.content}}
+                       </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-md-7">
+                                <div class="post__tag">
+                                    <h5>Releted Tags</h5>
+                                     {{page | tags | capitalize | replace: ","," "}}
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-md-5">
+                                <div class="post__share text-right">
+                                    <h5>Social Share</h5>
+                                    {% include social_share.html %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="posts_navigation pt-35 pb-35">
+                        <div class="row align-items-center">
+                            <div class="col-xl-4 col-md-5">
+                                <div class="prev-link">
+                                 {% if page.previous.url %}
+                                    <h4><a class="prev" href="{{page.previous.url}}">Prev Post</a></h4>
+                                  {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-2 text-left text-md-center">
+                                <a href="blog" class="blog-filter"><img src="/assets/img/icon/c_d01.png" alt="divider"></a>
+                            </div>
+                            <div class="col-xl-4 col-md-5">
+                                <div class="next-link text-left text-md-right">
+                                  {% if page.next.url %}
+                                   <h4><a class="next" href="{{page.next.url}}">Next Post</a></h4>
+                                  {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="related__post mt-45 mb-85">
+                        <div class="post-title">
+                            <h4>Related Post</h4>
+                        </div>
+                        <div class="row">
+                           {% for post in site.posts limit:"2" %}
+                            <div class="col-md-6">
+                                <div class="related-post-wrap mb-30">
+                                    {% if post.post_image %}
+                                    <div class="post-thumb">
+                                        <img class="img-fluid" src="{{post.post_image}}" alt="{{post.title}}"/>
+                                    </div>
+                                    {% endif %}
+                                    <div class="rp__content">
+                                        <h3><a href="{{post.url}}">{{post.title}}</a></h3>
+                                        <p>{{post.excerpt | strip_html | truncatewords:"15"}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="avatar__wrap text-center mb-45">
+                        <div class="avatar-img">
+                            <img class="img-fluid" src="{{relative_url}}/assets/images/avatar.png" alt="author"/>
+                        </div>
+                        <div class="avatar__info">
+                            <h5>Rosalina William</h5>
+                            <div class="avatar__info-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="avatar__wrap-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa aute irure dolor.</p>
+                        </div>
+                    </div>
+                    <div class="comment__wrap pb-45 mb-45">
+                        <div class="comment__wrap-title">
+                            <h5>Comments</h5>
+                            {% include disqus_comments.html %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+             {% include sidebar.html %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- inner-blog-end -->
+
+
+
+

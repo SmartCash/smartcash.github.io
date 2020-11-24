@@ -1,0 +1,37 @@
+---
+layout: default
+title: Category Page
+pagination:
+  enabled: true
+---
+{% include page_header.html %}
+<section class="category-area pt-100 pb-50">
+  <div class="container">
+      <div class="row">
+        {% for post in page.posts %}
+          <div class="col-md-6 mb-50 ">
+              <div class="bsingle__post mb-50">
+                  {% if post.post_image %}
+                  <div class="bsingle__post-thumb">
+                      <img src="{{post.post_image}}" class="img-fluid" alt="{{post.title}}"/>
+                  </div>
+                  {% endif %}
+                  <div class="bsingle__content">
+                      <div class="meta-info">
+                          <ul>
+                              <li><i class="far fa-user"></i>by {{post.author}}</li>
+                              <li><i class="far fa-comments"></i>35 Comments</li>
+                          </ul>
+                      </div>
+                      <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+                      <p>{{post.excerpt | strip_html | truncatewords:"15"}}</p>
+                      <div class="blog__btn">
+                          <a href="{{post.url}}" class="btn">Read More</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        {% endfor %}
+      </div>
+  </div>
+</section>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <title>{% if page.title %} {{page.title}} {% else if site.title %} {{site.title}} {% endif %}</title>
+        <meta name="description" content="{{site.description}}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="shortcut icon" type="image/x-icon" href="{{relative_url}}/assets/img/favicon.ico"/>
+        <!-- Place favicon.ico in the root directory -->
+
+		<!-- CSS here -->
+        <link rel="stylesheet" href="{{relative_url}}/assets/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="{{relative_url}}/assets/css/animate.min.css"/>
+        <link rel="stylesheet" href="{{relative_url}}/assets/css/magnific-popup.css"/>
+        <link rel="stylesheet" href="{{relative_url}}/assets/css/fontawesome-all.min.css"/>
+        <link rel="stylesheet" href="{{relative_url}}/assets/css/meanmenu.css"/>
+        <link rel="stylesheet" href="{{relative_url}}/assets/css/slick.css"/>
+        <link rel="stylesheet" href="{{relative_url}}/assets/css/default.css"/>
+        <link rel="stylesheet" href="{{relative_url}}/assets/css/style.css"/>
+        <link rel="stylesheet" href="{{relative_url}}/assets/css/responsive.css"/>
+    </head>
+    <body>
+        <!-- preloader -->
+<!--         <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                    <div class="object" id="object_four"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- preloader-end -->
+        {% include header.html %}
+        <main>
+         {{content}}
+        </main>
+        {% include brands_area.html %}
+        {% include footer.html %}
+		<!-- JS here -->
+        <script src="{{relative_url}}/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="{{relative_url}}/assets/js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="{{relative_url}}/assets/js/popper.min.js"></script>
+        <script src="{{relative_url}}/assets/js/bootstrap.min.js"></script>
+        <script src="{{relative_url}}/assets/js/isotope.pkgd.min.js"></script>
+        <script src="{{relative_url}}/assets/js/slick.min.js"></script>
+        <script src="{{relative_url}}/assets/js/jquery.meanmenu.min.js"></script>
+        <script src="{{relative_url}}/assets/js/ajax-form.js"></script>
+        <script src="{{relative_url}}/assets/js/wow.min.js"></script>
+        <script src="{{relative_url}}/assets/js/jquery.scrollUp.min.js"></script>
+        <script src="{{relative_url}}/assets/js/jquery.counterup.min.js"></script>
+        <script src="{{relative_url}}/assets/js/jquery.waypoints.min.js"></script>
+        <script src="{{relative_url}}/assets/js/jquery.easypiechart.js"></script>
+        <script src="{{relative_url}}/assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="{{relative_url}}/assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="{{relative_url}}/assets/js/jquery.nice-select.min.js"></script>
+        <script src="{{relative_url}}/assets/js/parallax.min.js"></script>
+        <script src="{{relative_url}}/assets/js/rellax.min.js"></script>
+        <script src="{{relative_url}}/assets/js/simple-jekyll-search.min.js"></script>
+        <script src="{{relative_url}}/assets/js/macy.js"></script>
+        <script id="dsq-count-scr" src="//xavat.disqus.com/count.js" async></script>
+        <script src="{{relative_url}}/assets/js/main.js"></script>
+    </body>
+</html>

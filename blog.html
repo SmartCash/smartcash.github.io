@@ -1,0 +1,66 @@
+---
+layout: default
+title: "Blog"
+permalink: "/blog/"
+pagination: 
+  enabled: true
+---
+
+{% include page_header.html %}
+
+<!-- inner-blog -->
+<section class="inner-blog section-ptb">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                {% for post in paginator.posts %}
+                <div class="bsingle__post mb-50">
+                    {% if post.post_image %}
+                    <div class="bsingle__post-thumb">
+                        <a href="{{post.url}}"><img src="{{post.post_image}}" class="img-fluid" alt="{{post.title}}"/></a>
+                    </div>
+                    {% endif %}
+                    <div class="bsingle__content">
+                        <div class="meta-info">
+                            <ul>
+                                <li><i class="far fa-user"></i>by {{post.author}}</li>
+                                <li><a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.id}}"> <i class="far fa-comments"></i>0 comments</a></li>
+
+                            </ul>
+                        </div>
+                        <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+                        <p>{{post.excerpt | strip_html | truncatewords:"35"}}</p>
+                        <div class="blog__btn">
+                            <a href="{{post.url}}" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                 {% endfor %}
+                <div class="pagination-wrap"> 
+                    <div class="pagination">
+                        {% if paginator.total_pages > 1 %}
+                            <ul>
+                              {% if paginator.previous_page %}
+                              <li class="page-item">
+                                <a class="onova_btn qoute_btn_3" href="{{ paginator.previous_page_path | prepend: site.baseurl }}"> <i class="fas fa-angle-double-left"></i></a>
+                              </li>
+                              {% endif %}
+                              {% if paginator.next_page %}
+                              <li class="page-item">
+                                <a class="onova_btn qoute_btn_3" href="{{ paginator.next_page_path | prepend: site.baseurl }}"> <i class="fas fa-angle-double-right"></i></a>
+                              </li>
+                              {% endif %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                  </div>	
+            </div>
+            <!-- Start Sidebar -->
+            <div class="col-lg-4">
+              {% include sidebar.html %}
+            </div>
+            <!-- End Sidebar -->
+        </div>
+    </div>
+</section>
+<!-- inner-blog-end -->

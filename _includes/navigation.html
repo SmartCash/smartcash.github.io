@@ -1,0 +1,21 @@
+<nav id="mobile-menu">
+<ul>
+    {% for link in site.data.navigation %}
+    {% assign active = nil %}
+    {% if page.url contains link.url %}
+        {% assign active = 'active' %}
+    {% endif %}
+     
+     <li class="{% if page.url contains link.url and link.url != "/" %} active {% endif %}">
+         <a href="{{link.url}}">{{link.text}}{% if link.submenu %} <i class="fas fa-angle-down"></i>{% endif %}</a>
+        {% if link.submenu %}
+        <ul class="submenu">
+            {% for sublink in link.submenu %}
+            <li><a href="{{sublink.url}}">{{sublink.text}}</a></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+</nav>

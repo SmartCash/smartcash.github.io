@@ -1,0 +1,31 @@
+<!-- footer -->
+<footer class="footer-bg pt-140 pb-140">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-10 offset-xl-1 text-center">
+                <div class="footer-logo mb-45 wow fadeInUp" data-wow-delay="0.2s">
+                    <a href="index.html"><img src="{{relative_url}}/assets/img/logo/white_logo.png" alt=""></a>
+                </div>
+                <div class="footer-content mb-45 wow fadeInUp" data-wow-delay="0.4s">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                </div>
+                <div class="footer-social">
+                    {% if site.facebook_url %}
+                     <a href="{{site.facebook_url}}"><i class="fab fa-facebook-f"></i></a>
+                    {% endif %}
+                    {% if site.twitter_url %}
+                     <a href="{{site.twitter_url}}"><i class="fab fa-twitter"></i></a>
+                    {% endif %}
+                    {% if site.behance_url %}
+                     <a href="{{site.behance_url}}"><i class="fab fa-behance"></i></a>
+                    {% endif %}
+                    {% if site.youtube %}
+                     <a href="{{site.youtube_url}}"><i class="fab fa-youtube"></i></a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer-end -->
