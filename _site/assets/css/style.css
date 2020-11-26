@@ -911,7 +911,7 @@ label {
 }
 /* choose-area */
 .choose-area {
-	background: #fff6f5;
+	background: #f4b5170d;
 }
 .scf-icon {
 	float: left;
@@ -1126,7 +1126,8 @@ label {
 	color: #f4b517;
 	font-size: 14px;
 	line-height: 63px;
-	background: #ffeeef;
+	background: #fff;
+	border: 1px solid #f4b517;
 	cursor: pointer;
 	padding: 0;
 	transition: .3s;
@@ -3490,6 +3491,10 @@ search form
 
 /* person style */
 
-.main-banner {
-	background-color: #f4b51724 ;
+.bg-yellow {
+	background: #f4b517;
+}
+
+.bg-yellow-transparent {
+	background-color: #f4b5170d ;
 }
