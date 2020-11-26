@@ -20,19 +20,18 @@
   - text: Brochure/whitepaper
   - text: SmartRewards
   - text: SmartNodes
-- text: TheHive
+- text: Hive
   submenu:
   - text: Hive Teams
-    url: /thehive/team
+    url: /hive/team
   - text: Roadmap
-    url: /thehive/roadmap
+    url: /hive/roadmap
   - text: SmartHive Discussion
-    url: /thehive/smarthive-discussion
+    url: /hive/smarthive-discussion
   - text: SmartHive Voting
-    url: /thehive/smarthive-voting
+    url: /hive/smarthive-voting
   - text: Publications Arquive
-    url: /thehive/publications-arquive
-- text: Meetups
+    url: /hive/publications-arquive
 - text: Businesses
   submenu:
   - text: Benefits for Merchants
@@ -62,7 +61,6 @@
     - text: Marketing Materials
 - text: News
   url: https://coinlance.com
-- text: Get SMartCash
   submenu:
     - text: index2
       url: /index-2
@@ -82,3 +80,4 @@
       url: /services
     - text: Contact
       url: /contact
+  
