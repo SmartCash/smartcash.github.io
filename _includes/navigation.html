@@ -11,7 +11,16 @@
         {% if link.submenu %}
         <ul class="submenu">
             {% for sublink in link.submenu %}
-            <li><a href="{{sublink.url}}">{{sublink.text}}</a></li>
+            <li>
+                <a href="{{sublink.url}}">{{sublink.text}}</a>
+                {% if sublink.submenu %}
+                <ul class="submenu2">
+                    {% for sublink in sublink.submenu %}
+                    <li><a href="{{sublink.url}}">{{sublink.text}}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </li>
             {% endfor %}
         </ul>
         {% endif %}

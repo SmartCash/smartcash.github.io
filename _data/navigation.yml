@@ -1,32 +1,84 @@
 #Please use the main menu items under the "text"
 
-- text: Home
+- text: welcome
   url: /
+- text: Wallets
+  url: /wallets
   submenu:
-  - text: Home 2
-    url: /index-2
-- text: About
+  - text: Mobile Wallet
+    url: /wallets/mobile-wallet
+  - text: Electrum Wallet
+    url: /wallets/electrum-wallet
+    submenu:
+    - text: Electrum SmartCash wallet guide
+      url: /wallets/electrum/guide
+  - text: Node Client
+    url: /wallets/node-client
+- text: What Is SmartCash
   url: /about
-- text: Blog
-  url: https://coinlance.com
-- text: Services
-  url: /services
-- text: Pages
-  url: /#
   submenu:
-  - text: About
-    url: /about
-  - text: Portfolio
-    url: /portfolio
-  - text: Team
-    url: /team
-  - text: Blog
-    url: https://coinlance.com
-  - text: Coinlance News
-    url: /welcome-to-jekyll
-  - text: Contact
-    url: /contact
-  - text: 404
-    url: /404
-- text: Contact
-  url: /contact
+  - text: Brochure/whitepaper
+  - text: SmartRewards
+  - text: SmartNodes
+- text: TheHive
+  submenu:
+  - text: Hive Teams
+    url: /thehive/team
+  - text: Roadmap
+    url: /thehive/roadmap
+  - text: SmartHive Discussion
+    url: /thehive/smarthive-discussion
+  - text: SmartHive Voting
+    url: /thehive/smarthive-voting
+  - text: Publications Arquive
+    url: /thehive/publications-arquive
+- text: Meetups
+- text: Businesses
+  submenu:
+  - text: Benefits for Merchants
+  - text: Where to Spend
+- text: Resources
+  submenu:
+  - text: Guides
+    submenu:
+    - text: Web Wallet Guides
+    - text: SmartNode Guides
+    - text: Hardware Wallet Guides
+    - text: Electrum Wallet Guides
+    - text: Desktop Wallet Guides
+    - text: Mining Guides
+    - text: Proposal Guides
+    - text: SmartReward Guides
+  - text: insight Explorer
+  - text: Pool Overview
+  - text: GitHub
+  - text: Services
+  - text: Projects
+  - text: Exchanges
+    submenu:
+    - text: Exchange Listing Guide
+  - text: Graphics
+    submenu:
+    - text: Marketing Materials
+- text: News
+  url: https://coinlance.com
+- text: Get SMartCash
+  submenu:
+    - text: index2
+      url: /index-2
+    - text: About
+      url: /about
+    - text: Portfolio
+      url: /portfolio  
+    - text: Blog
+      url: https://coinlance.com
+    - text: Coinlance News
+      url: /welcome-to-jekyll
+    - text: Contact
+      url: /contact
+    - text: 404
+      url: /404
+    - text: Services
+      url: /services
+    - text: Contact
+      url: /contact
