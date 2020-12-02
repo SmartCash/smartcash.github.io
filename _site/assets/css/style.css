@@ -803,11 +803,16 @@ label {
 	background-position: center;
 }
 /* 5. join-us */
+.join-list ul {
+	display: flex;
+	flex-wrap: wrap;
+}
 .join-list ul li {
 	overflow: hidden;
 	display: flex;
 	align-items: center;
 	margin-bottom: 20px;
+	width: 50%;
 }
 .join-list ul li:last-child {
 	margin-bottom: 0px;
@@ -831,13 +836,19 @@ label {
 	font-size: 14px;
 	transition: .3s;
 }
+.join-list ul li p a{
+	color: #152136;
+}
 .join-list ul li:hover .icon{background: #f4b517;color: #fff;border-color: #f4b517;}
 .join-list ul li:hover p{color: #152136;}
+.join-list ul li:hover p a{color: #f4b517;}
 .join-btn .btn {
 	background: transparent;
 	border-color: #eae4ff;
 	color: #5f708f;
 	margin-right: 15px;
+	padding: 10px;
+    font-size: 12px;
 }
 .join-btn .btn:hover{
 	background: #f4b517;
