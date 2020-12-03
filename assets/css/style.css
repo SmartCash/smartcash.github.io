@@ -1120,7 +1120,7 @@ label {
 	color: #f4b517;
 }
 .second-team-area {
-	padding-top: 335px;
+	padding-top: 0px;
 }
 .s-team-active .slick-slide:focus {
 	outline: -webkit-focus-ring-color auto 0px;
