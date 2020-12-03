@@ -21,3 +21,9 @@ gem install jekyll-paginate-v2
 gem install jekyll-archives       
 
 Run local: jekyll serve --trace
+
+### Install Gems FOR MAC ###
+gem install minima
+gem install jekyll-feed
+gem install jekyll bundler
+jekyll serve
