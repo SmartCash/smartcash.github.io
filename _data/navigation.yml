@@ -28,10 +28,10 @@
     url: /hive/roadmap
   - text: SmartHive Discussion
     url: /hive/smarthive-discussion
-  - text: SmartHive Voting
-    url: /hive/smarthive-voting
-  - text: Publications Arquive
-    url: /hive/publications-arquive
+  - text: BusyBee Auction
+    url: https://busybee.auction
+  - text: Publications
+    url: /hive/publications
 - text: Businesses
   submenu:
   - text: Benefits for Merchants
@@ -62,22 +62,11 @@
 - text: News
   url: https://coinlance.com
   submenu:
-    - text: index2
-      url: /index-2
     - text: About
       url: /about
-    - text: Portfolio
-      url: /portfolio  
-    - text: Blog
-      url: https://coinlance.com
+    - text: Forum
+      url: https://forum.smartcash.cc
     - text: Coinlance News
-      url: /welcome-to-jekyll
+      url: https://coinlance.com
     - text: Contact
       url: /contact
-    - text: 404
-      url: /404
-    - text: Services
-      url: /services
-    - text: Contact
-      url: /contact
-  
