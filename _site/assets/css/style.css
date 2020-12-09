@@ -1699,6 +1699,7 @@ label {
 .portfolio-thumb {
 	position: relative;
 	overflow: hidden;
+	cursor: pointer;
 }
 .portfolio-thumb::before {
 	content: "";
@@ -1730,7 +1731,7 @@ label {
 	display: block;
 }
 .portfolio-overly h5 {
-	font-size: 26px;
+	font-size: 22px;
 	font-weight: 500;
 	text-transform: capitalize;
 	margin-bottom: 20px;

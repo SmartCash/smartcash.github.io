@@ -6,9 +6,9 @@
   url: /wallets
   submenu:
   - text: Mobile Wallet
-    url: /wallets/mobile-wallet
+    url: /wallets/#wallet-mobile
   - text: Electrum Wallet
-    url: /wallets/electrum-wallet
+    url: /wallets/#wallet-desktop
     submenu:
     - text: Electrum SmartCash wallet guide
       url: /wallets/electrum/guide
