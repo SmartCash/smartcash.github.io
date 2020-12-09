@@ -354,6 +354,30 @@ $('.portfolio-active').imagesLoaded(function () {
 
 });
 
+// isotope
+$('.portfolio-2-active').imagesLoaded(function () {
+	var $grid = $('.portfolio-2-active').isotope({
+		itemSelector: '.grid-item',
+		percentPosition: true,
+		masonry: {
+			columnWidth: 1
+		}
+	})
+
+	// filter items on button click
+	$('.portfolio-2-menu').on('click', 'button', function () {
+		var filterValue = $(this).attr('data-filter');
+		$grid.isotope({ filter: filterValue });
+	});
+	//for menu active class
+	$('.portfolio-2-menu button').on('click', function (event) {
+		$(this).siblings('.active').removeClass('active');
+		$(this).addClass('active');
+		event.preventDefault();
+	});
+
+});
+
 
 // scrollToTop
 $.scrollUp({
