@@ -4,16 +4,6 @@
   url: /
 - text: Wallets
   url: /wallets
-  submenu:
-  - text: Mobile Wallet
-    url: /wallets/#wallet-mobile
-  - text: Electrum Wallet
-    url: /wallets/#wallet-desktop
-    submenu:
-    - text: Electrum SmartCash wallet guide
-      url: /wallets/electrum/guide
-  - text: Node Client
-    url: /wallets/node-client
 - text: What Is SmartCash
   url: /about
   submenu:

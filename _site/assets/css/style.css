@@ -1704,10 +1704,10 @@ label {
 .portfolio-thumb::before {
 	content: "";
 	position: absolute;
-	left: 30px;
-	top: 30px;
-	right: 30px;
-	bottom: 30px;
+	left: 5px;
+	top: 5px;
+	right: 5px;
+	bottom: 5px;
 	background: #f4b517;
 	opacity: 0;
 	transition: .5s;
@@ -1750,6 +1750,7 @@ label {
 }
 .portfolio-thumb img {
 	width: 100%;
+	object-fit: scale-down;
 }
 .portfolio-item:hover .portfolio-overly{top: 50%;opacity: 1;}
 .portfolio-item:hover .portfolio-thumb::before{opacity: .8;}
@@ -1923,7 +1924,12 @@ label {
 	background-position: center;
 }
 .single-brand{text-align: center;}
-.single-brand img{display: inline-block;}
+.single-brand img{
+	display: inline-block;
+	object-fit: scale-down;
+    width: 100%;
+	height: 50px;
+}
 /* 15. skill */
 .skill-bg {
 	background: #f4b517;
@@ -3503,10 +3509,30 @@ search form
 
 /* person style */
 
+.portfolio-link a i {
+    font-size: 30px;
+}
+
 .bg-yellow {
 	background: #f4b517;
 }
 
 .bg-yellow-transparent {
 	background-color: #f4b5170d ;
+}
+
+.bg-light-pink-hover:hover{
+	background: #f4d5d7;
+}
+
+.bg-light-blue-hover:hover{
+	background: #2db3c9;
+}
+
+.bg-light-grey-hover:hover{
+	background: #d8d8d8;
+}
+
+.bg-light-purple-hover:hover {
+	background: #5442e2;
 }
