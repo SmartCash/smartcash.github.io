@@ -1,27 +1,20 @@
 #Please use the main menu items under the "text"
 
-- text: welcome
-  url: /
 - text: Wallets
   url: /wallets
 - text: What Is SmartCash
   url: /about
   submenu:
   - text: Brochure/whitepaper
-  - text: SmartRewards
-  - text: SmartNodes
+    url: https://github.com/hoangton/smartcash/tree/master/binary/brochures
 - text: Hive
   submenu:
   - text: Hive Teams
     url: /hive/team
   - text: Roadmap
     url: /hive/roadmap
-  - text: SmartHive Discussion
-    url: /hive/smarthive-discussion
   - text: BusyBee Auction
     url: https://busybee.auction
-  - text: Publications
-    url: /hive/publications
 - text: Businesses
   submenu:
   - text: Benefits for Merchants
