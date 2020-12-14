@@ -3,7 +3,7 @@
 - text: Wallets
   url: /wallets
 - text: What Is SmartCash
-  url: /about
+  url: /#about_smartcash
   submenu:
   - text: Brochure/whitepaper
     url: https://github.com/hoangton/smartcash/tree/master/binary/brochures
@@ -15,10 +15,6 @@
     url: /hive/roadmap
   - text: BusyBee Auction
     url: https://busybee.auction
-- text: Businesses
-  submenu:
-  - text: Benefits for Merchants
-  - text: Where to Spend
 - text: Resources
   submenu:
   - text: Guides
