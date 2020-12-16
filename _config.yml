@@ -1,11 +1,11 @@
 
 title: "SmartCash – 2.0 Horizon Release"
 description: >- # this means to ignore newlines until "baseurl:"
-  SmartCash is a community governance, cooperation & growth focused blockchain based currency & a decentralized economy.
+  SmartCash is merchant focused, blockchain-based currency and part of a new decentralized economy.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://smartcash.cc" # the base hostname & protocol for your site, e.g. http://example.com
-phone_number: "+8801763633959"
-email: "rubel2585@gmail.com"
+url: "/" # the base hostname & protocol for your site, e.g. http://example.com
+phone_number: ""
+email: "hello@smartcash.cc"
 company_name: "smartcash"
 site_logo_one: "/assets/img/logo/logo.png"
 site_logo_two: "/assets/images/logo_3.png"
