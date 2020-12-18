@@ -41,8 +41,6 @@
 - text: News
   url: https://coinlance.com
   submenu:
-    - text: About
-      url: /about
     - text: Forum
       url: https://forum.smartcash.cc
     - text: Coinlance News
