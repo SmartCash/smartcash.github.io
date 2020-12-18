@@ -39,7 +39,7 @@
         <div class="row align-items-center">
             <div class="col-lg-2">
                 <div class="logo">
-                    <a href="http://localhost:4000"><img class="img-fluid" src="/assets/img/logo/logo.png" alt="logo"/></a>
+                    <a href="/"><img class="img-fluid" src="/assets/img/logo/logo.png" alt="logo"/></a>
                 </div>
             </div>
             <div class="col-lg-9">
@@ -256,7 +256,7 @@
                     </div>
                     <!-- <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="http://localhost:4000">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Publications</li>
                         </ol>
                     </nav> -->
