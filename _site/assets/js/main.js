@@ -357,7 +357,7 @@ $('.portfolio-active').imagesLoaded(function () {
 // isotope
 $('.portfolio-2-active').imagesLoaded(function () {
 	var $grid = $('.portfolio-2-active').isotope({
-		itemSelector: '.grid-item',
+		itemSelector: '.grid-item-2',
 		percentPosition: true,
 		masonry: {
 			columnWidth: 1

@@ -1695,11 +1695,18 @@ label {
 .portfolio-item {
 	position: relative;
 	overflow: hidden;
+	height: 200px;
 }
 .portfolio-thumb {
 	position: relative;
 	overflow: hidden;
 	cursor: pointer;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px;
 }
 .portfolio-thumb::before {
 	content: "";
@@ -1710,16 +1717,14 @@ label {
 	bottom: 5px;
 	background: #f4b517;
 	opacity: 0;
-	transition: .5s;
+	transition: .3s;
+	height: 100%;
 }
 .portfolio-overly {
-	position: absolute;
-	top: 40%;
-	transform: translate(-50%,-50%);
-	left: 50%;
-	z-index: 1;
-	transition: .5s;
+	visibility: hidden;
+    transition: .3s;
 	opacity: 0;
+	display: none;
 }
 .portfolio-overly span {
 	font-size: 14px;
@@ -1749,10 +1754,22 @@ label {
 	color: #152136;
 }
 .portfolio-thumb img {
-	width: 100%;
+	width: 60%;
 	object-fit: scale-down;
+	padding: 15px;
 }
-.portfolio-item:hover .portfolio-overly{top: 50%;opacity: 1;}
+.portfolio-item:hover .portfolio-overly{
+	top: 0;
+    opacity: 1;
+    position: absolute;
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	visibility: visible;
+}
 .portfolio-item:hover .portfolio-thumb::before{opacity: .8;}
 .portfolio-menu {
 	border: 2px solid #f4f4f4;
@@ -3510,7 +3527,7 @@ search form
 /* person style */
 
 .portfolio-link a i {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .bg-yellow {
