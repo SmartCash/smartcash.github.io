@@ -1,7 +1,5 @@
 #Please use the main menu items under the "text"
 
-- text: Wallets
-  url: /wallets
 - text: What Is SmartCash
   url: /#about_smartcash
   submenu:
@@ -15,6 +13,8 @@
     url: /hive/roadmap
   - text: BusyBee Auction
     url: https://busybee.auction
+- text: Wallets
+  url: /wallets
 - text: Resources
   submenu:
   - text: Guides
