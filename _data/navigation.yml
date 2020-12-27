@@ -41,20 +41,6 @@
     url: https://pool.smartcash.cc/
   - text: GitHub
     url: https://github.com/SmartCash
-  - text: Services
-    url: https://smartcash.cc/#services
-  - text: Projects
-    url: https://smartcash.cc/#projects
-  - text: Exchanges
-    url: https://smartcash.cc/#exchanges
-    submenu:
-    - text: Exchange Listing Guide
-      url: https://smartcash.cc/wp-content/uploads/2018/10/SmartCash-SMART-Exchange-Listing-Guide-v1.2.6.pdf
-  - text: Graphics
-    url: https://smartcash.cc/graphics/
-    submenu:
-    - text: Marketing Materials
-      url: https://smartcash.cc/marketing-materials/
 - text: News
   url: https://coinlance.com
   submenu:
