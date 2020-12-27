@@ -20,24 +20,41 @@
   - text: Guides
     submenu:
     - text: Web Wallet Guides
+    - url: https://smartcash.freshdesk.com/support/solutions/folders/35000162353
     - text: SmartNode Guides
+      url: https://smartcash.freshdesk.com/support/solutions/folders/35000162349
     - text: Hardware Wallet Guides
+      url: https://smartcash.freshdesk.com/support/solutions/folders/35000209842
     - text: Electrum Wallet Guides
+      url: https://smartcash.freshdesk.com/support/solutions/folders/35000208047
     - text: Desktop Wallet Guides
+      url: https://smartcash.freshdesk.com/support/solutions/folders/35000162354gi
     - text: Mining Guides
+      url: https://smartcash.freshdesk.com/support/solutions/folders/35000162431
     - text: Proposal Guides
+      url: https://smartcash.freshdesk.com/support/solutions/folders/35000162357
     - text: SmartReward Guides
+      url: https://smartcash.freshdesk.com/support/solutions/folders/35000162348
   - text: insight Explorer
+    url: https://insight.smartcash.cc/
   - text: Pool Overview
+    url: https://pool.smartcash.cc/
   - text: GitHub
+    url: https://github.com/SmartCash
   - text: Services
+    url: https://smartcash.cc/#services
   - text: Projects
+    url: https://smartcash.cc/#projects
   - text: Exchanges
+    url: https://smartcash.cc/#exchanges
     submenu:
     - text: Exchange Listing Guide
+      url: https://smartcash.cc/wp-content/uploads/2018/10/SmartCash-SMART-Exchange-Listing-Guide-v1.2.6.pdf
   - text: Graphics
+    url: https://smartcash.cc/graphics/
     submenu:
     - text: Marketing Materials
+      url: https://smartcash.cc/marketing-materials/
 - text: News
   url: https://coinlance.com
   submenu:
