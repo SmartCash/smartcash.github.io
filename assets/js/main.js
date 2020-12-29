@@ -4,6 +4,19 @@
 // preloader
 $(window).on('load', function () {
 	$("#loading").fadeOut(500);
+	$(".code").on("click", (target) => {
+
+		const el = document.createElement('textarea'); // Create a <textarea> element
+		el.value = target.currentTarget.innerText;  // Set its value to the string that you want copied
+		el.setAttribute('readonly', ''); // Make it readonly to be tamper-proof
+		el.style.position = 'absolute'; 
+		el.style.left = '-9999px'; // Move outside the screen to make it invisible
+		document.body.appendChild(el); // Append the <textarea> element to the HTML document
+		el.select(); // Select the <textarea> content
+		document.execCommand('copy'); // Copy - only works as a result of a user action (e.g. click events)
+		document.body.removeChild(el)
+	
+	})
 })
 
 // meanmenu
@@ -456,6 +469,8 @@ var macy = Macy({
         400: 1
     }
 });
+
+
 
 
 })(jQuery);
