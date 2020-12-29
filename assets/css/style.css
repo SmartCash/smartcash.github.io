@@ -3561,6 +3561,10 @@ search form
 	.scf-content h4 {
 		padding: 0;
 	}
+
+	.row.hardware-wallets > div {
+		margin: 30px;
+	}
 }
 
 
@@ -3622,6 +3626,7 @@ search form
     padding: 15px;
 	border: 1px dashed;
 	margin-bottom: 15px;
+	overflow: auto;
 }
 
 #myTabContent {
