@@ -38,14 +38,14 @@ a.meanmenu-reveal {
 	display: block;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 700;
-	margin-top: -36px;
-	border: 1px solid #222;
-	color: #222;
+	margin-top: -50px;
+	border: 1px solid #f4b517;
+	color: #f4b517;
 }
 
 .mean-container a.meanmenu-reveal span {
 	display: block;
-	background: #222;
+	background: #f4b517;
 	height: 3px;
 	margin-top: 3px;
 }
@@ -53,7 +53,7 @@ a.meanmenu-reveal {
 .mean-container .mean-nav {
 	float: left;
 	width: 100%;
-	background: #0c1923;
+	background: #f4b517;
 	margin-top: 15px;
 }
 
@@ -137,7 +137,7 @@ a.meanmenu-reveal {
 	border-bottom: 1px solid rgba(255,255,255,0.2) !important;
 }
 .mean-container .mean-nav ul li a.mean-expand:hover {
-	background: rgba(0,0,0,0.9);
+	background: rgba(209, 173, 11, 0.808);
 }
 
 .mean-container .mean-push {

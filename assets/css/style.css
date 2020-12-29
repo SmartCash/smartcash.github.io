@@ -1253,10 +1253,21 @@ label {
 	margin-bottom: 0;
 	transition: .5s;
 }
+.is-content a {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 15px;
+}
 .inner-single-services:hover {background: #f4b517;}
 .inner-single-services:hover .is-icon > i {color: #fff;}
-.inner-single-services:hover .is-content p {color: #fff;}
+.inner-single-services:hover .is-content p {color: #5f708f;}
 .inner-single-services:hover .is-content h4 {color: #fff;}
+.inner-single-services:hover .is-content a {
+	color: #fff;
+    text-decoration: underline;
+}
 .inner-services-padding {
 	padding: 1px;
 }
@@ -3581,4 +3592,50 @@ search form
 
 .bg-light-purple-hover:hover {
 	background: #5442e2;
+}
+
+.f-bold {
+	font-weight: bold;
+}
+
+.row.hardware-wallets a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.row.hardware-wallets a img {
+    object-fit: cover;
+    max-width: 150px;
+}
+
+.node-area {
+	background-color: #e7a8161f;
+}
+
+.node-client h3 {
+	text-transform: uppercase;
+}
+
+.code {
+    background: #fff;
+    padding: 15px;
+	border: 1px dashed;
+	margin-bottom: 15px;
+}
+
+#myTabContent {
+    background: #fff;
+    padding: 15px;
+}
+
+.sm-tipbots {
+	display: flex;
+	justify-content: center;
+}
+
+section.sm-tipbots .row {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }

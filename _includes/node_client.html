@@ -1,0 +1,90 @@
+<section class="node-area pt-133 pb-110">
+    <div class="container node-client">
+        <div class="row">
+            <div class="col-12 text-center f-bold mb-30">                
+                <h3 class="f-bold">Node client</h3>
+            </div>
+            <div class="col-12">
+                <div class="subContent">
+                    <h5 class="title">We released 1.3.3 with notes:</h5>
+                </div>
+                <div class="subContent">
+                    <p class="title">If you are stuck on a block 1794798 try this while node is running.</p>
+                    <div class="code">./smartcash-cli clearbanned && ./smartcash-cli reconsiderblock 0000000000007da5223b8548bd44f412dc0a127734caeffb245e28dbb229e2a4 && ./smartcash-cli stop && ./smartcashd</div>
+                </div>
+                <div class="subContent">
+                    <p class="title">Or with QT wallets from debug – console run these commands and then restart wallet.</p>
+                    <p>clearbanned</p>
+                    <div class="code">reconsiderblock 0000000000007da5223b8548bd44f412dc0a127734caeffb245e28dbb229e2a4</div>
+                </div>
+                <div class="subContent">
+                    <p class="title">If the reconsider block fails start with</p>
+                    <div class="code">./smartcashd -reindex</div>
+                </div>
+                <p>This Node Client requires the blockchain download which can take hours on slow machines. It is also only intended for smartnode operators. To assist in speeding up the syncing of your Node Client read more <a href="https://smartcash.freshdesk.com/support/solutions/articles/35000027174-using-the-bootstrap-to-speedup-sync-process" target="_blank">here</a></p>
+                <p>Disclaimer: Do not move your wallet.dat with your wallet running. Backup your wallet by using the backup wallet command from the QT wallet menu or by closing the wallet and waiting about a minute to close and copy the wallet.dat file. Always keep at least one copy of your wallet on an external drive. Do not shutdown your computer with wallet running or kill the wallet process. These can cause the wallet to get corrupted. Always exit the wallet from the menu or close x and wait for it to shutdown before turning off your computer.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="theme-bg pb-110">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-12 col-lg-12">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="windows-tab" data-toggle="tab" href="#windows" role="tab" aria-controls="windows"
+                            aria-selected="true"><i class="fab fa-windows"></i> Windows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="ARM-PI-tab" data-toggle="tab" href="#ARM-PI" role="tab" aria-controls="ARM-PI"
+                            aria-selected="false"><i class="fab fa-linux"></i> ARM-PI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="OSX-tab" data-toggle="tab" href="#OSX" role="tab" aria-controls="OSX"
+                            aria-selected="false"><i class="fab fa-apple"></i> OSX</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="linux-tab" data-toggle="tab" href="#linux" role="tab" aria-controls="linux"
+                            aria-selected="false"><i class="fab fa-linux"></i> Linux</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="windows" role="tabpanel" aria-labelledby="windows-tab">
+                <p><a href="https://github.com/SmartCash/Core-Smart/releases/download/v1.3.3/smartcash-1.3.3-win32-setup.exe">smartcash-1.3.3-win32-setup.exe</a></p>
+                <p><a href="https://github.com/SmartCash/Core-Smart/releases/download/v1.3.3/smartcash-1.3.3-win64-setup.exe">smartcash-1.3.3-win64-setup.exe</a></p>                
+                <p>Binaries – SHA256 Checksum</p>
+                <div class="code">80A704BE454ED4FF125DD8EA55596EB60ABAFDD49B6F9EA40E3D1176DFD12960 smartcash-1.3.3-win32-setup.exe</div>
+                <div class="code">DDF9E0973BE1ACBFFF1E34E210C46DA5D4C132322AA567A4090D22D476C46715 smartcash-1.3.3-win64-setup.exe</div>
+            </div>
+            <div class="tab-pane fade" id="ARM-PI" role="tabpanel" aria-labelledby="ARM-PI-tab">
+                <p><a href="https://github.com/SmartCash/Core-Smart/releases/download/v1.3.2/smartcash-1.3.2-arm-rpi.tar.gz">smartcash-1.3.2-arm-rpi.tar.gz</a></p>
+                <p>5.69 MB</p>
+                <p>Binaries – SHA256 Checksum</p>
+                <div class="code">39f75ac0074a03cb1d71f9e1c5988598f98ccb7bda3d8f7bdf5b117562d05727</div>
+            </div>
+            <div class="tab-pane fade" id="OSX" role="tabpanel" aria-labelledby="OSX-tab">
+                <p><a href="https://github.com/SmartCash/Core-Smart/releases/download/v1.3.3/smartcash-1.3.3-osx.dmg">smartcash-1.3.3-osx.dmg</a></p>
+                <p>13.9MB</p>
+                <p>(Mac OS 10.10 or later)</p>
+                <p>Binaries – SHA256 Checksum</p>
+                <div class="code">B3BCD75FCE8D9D180401B250096283C2D342B807C74F5648445E15963BB86C2C</div>
+            </div>
+            <div class="tab-pane fade" id="linux" role="tabpanel" aria-labelledby="linux-tab">
+                <p><a href="https://github.com/SmartCash/Core-Smart/releases/download/v1.3.3/smartcash-1.3.3-x86_64-linux-gnu.tar.gz"></a> smartcash-1.3.3-x86_64-linux-gnu.tar.gz</p>
+                <p>21.8MB</p>
+                <p>Binaries – SHA256 Checksum</p>
+                <div class="code">4390AC4CADAFBA45FCF2421D598F03236E91732414975F719E6248F0CF0D3986</div>
+                <p>on v1.3.3 we did not support install via ppa yet.</p>
+                <p>For Ubuntu command line:</p>
+                <div class="code">sudo apt-get install software-properties-common -y && sudo add-apt-repository ppa:smartcash/ppa -y && sudo apt update && sudo apt install smartcashd -y && smartcashd</div>
+                <p>For Ubuntu 16 and 18 graphical version:</p>
+                <div class="code">sudo apt-get install software-properties-common -y && sudo add-apt-repository ppa:smartcash/ppa -y && sudo apt update && sudo apt install smartcash-qt -y && smartcash-qt</div>
+                <p>Other linux versions download .tar.gz file and extract the smartcash-qt in the bin directory</p>
+            </div>
+        </div>
+    </div>
+</section>
